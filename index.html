@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peddy Website</title>
+    <style>
+        .category-btn.active {
+    background-color: red !important;
+    color: white;
+  }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
+   
 
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -12,8 +19,11 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   
 </head>
-<body class = >
+<body>
     
     <header class ="bg-gray-50 w-11/12">
         <nav class=" flex justify-between items-center p-6 bg-white " >
@@ -31,15 +41,113 @@
               <img src="https://img.icons8.com/?size=32&id=43942&format=png"  alt = "user" />
             </div>
         </nav>
-        
+       
     </header>
         
+    <banner class ="text-center  p-3">
 
-    <main>
 
-    </main>
-    <footer>
+        <h2 class="text-gray-600 mb-6 text-xl">Bringing Families Together 🐾</h2>
+        <h1 class="text-3xl md:text-5xl font-bold mt-2">Your Path to Adoption <br>Starts Here</h1>
+        <p class="text-gray-500 mt-6  mx-auto">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.
+        </p>
+        <div class="text-center">
+            <button  id = "viewmore"class="mt-5 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                View More
+            </button>
+            
+        </div>
+        
 
-    </footer>
+        <div class="flex justify-center mt-8">
+            <img src="images/pet.webp" alt="Cute Pets" class="w-full md:w-2/3 lg:w-1/2 rounded-lg ">
+        </div>
+
+           
+       
+    </banner>
+    
+<section id ="adoptsection" class ="">
+
+    <h2 class="text-3xl font-bold text-center">Adopt Your Best Friend</h2>
+    <p class="text-gray-500 mt-5 text-center mb-5 mx-auto">
+        It is a long established fact that a reader will be distracted by the readable content of a page <br>when looking at it layout.The point of using Lorem Ipsum is that it has a .
+    </p>
+    <nav id ="categories"  class=" flex justify-center  gap-5"></nav>
+</section>
+    <section class="bg-gray-50 ">
+        
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-semibold">Best Deal For You</h2>
+                <button class="bg-teal-500 text-white px-4 py-2 rounded-lg">Sort by Price</button>
+            </div>
+
+            <div class="flex gap-3 mb-10">
+            <!-- Pet Cards -->
+            <div id="petscard" class="flex-1 grid grid-cols-3 gap-6">
+                
+            </div>
+            
+
+
+            <div class="w-40">
+                <div class="grid grid-cols-2 gap-2">
+                    </div>
+                    </div>
+            </div>
+    </section>
+
+<footer class="bg-black text-white py-10 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Left Section -->
+        <div>
+            <h2 class="text-xl font-bold flex items-center">
+                <span class="text-teal-400 text-2xl">🐾</span> Peddy
+            </h2>
+            <p class="mt-2">Location: av. Washington 165, NY CA 54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@yourdomain.com</p>
+            <p>Opening hours: 9.00 AM - 5.00 PM</p>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-3 mt-4">
+                <a href="#" class="text-blue-500 text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-red-500 text-2xl"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="text-pink-500 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Center Section -->
+        <div>
+            <h3 class="text-lg font-semibold">Useful Links</h3>
+            <ul class="mt-2 space-y-2">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Animals</a></li>
+                <li><a href="#" class="hover:underline">Foundation</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Section -->
+        <div>
+            <h3 class="text-lg font-semibold">Drop a Message</h3>
+            <input type="email" placeholder="Enter your email"
+                class="input input-bordered w-full bg-gray-800 text-white mt-2" />
+            <button class="btn bg-teal-600 text-white w-full mt-2 hover:bg-teal-700">Subscribe</button>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <script src = "JS/index.js" ></script>
+    
 </body>
 </html>
